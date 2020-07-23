@@ -2,11 +2,116 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximium-scale=1.0, minimium-scale=1.0">
+    <title>League of Legends</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" >
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximium-scale=1.0, minimium-scale=1.0">
+   </head>
+
   <body>
-    <div id="root"></div>
+    <header>
+      <nav class="navegation">
+        <input type="checkbox" id="check"> 
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a class="active" href="https://lan.leagueoflegends.com/es-mx/"></a>Explore</li> 
+          <li><a href="https://euw.leagueoflegends.com/en-gb/news/">News</a></li>
+          <li><a href="https://na.leagueoflegends.com/en-us/news/community/">Community</a></li>
+          <li><a href="https://support.riotgames.com/">Support</a></li>
+          <li><a href="https://universe.leagueoflegends.com/en_US/">Universe</a></li>
+          <li><a href=""></a>ENG</li>  
+        </ul> 
+        <input type="text" class="search" placeholder="Search" autocomplete="off">
+      </nav>
+    </header>
+
+    <main>
+      <!-- Abro viewOne xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+      <div class = "viewOne">
+        <div class = "welcomeView">
+          <div class = "titleContainer">
+            <h1 class ="itemTitle1" >Welcome to</h1>
+            <h2 class = "itemTitle2">League of Legends</h2>
+            <button type="button" class="explore">Explore</button>
+          </div>
+        </div>
+      </div>
+      <!-- Cierro viewOne xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+      <!-- Abro viewTwo xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+      <div class="viewTwo">
+      <!-- Este de aquí puede ir al Menú principal xxxxxxxxxxxxx-->
+           <div class = "sortContainer">
+            <select id = "Condition">
+              <option value="All">All</option>
+              <option value="Support">Support</option>
+              <option value="Assassin">Assassin</option>
+              <option value="Tank">Tank</option>
+              <option value="Fighter">Fighter</option>
+              <option value="Mage">Mage</option>
+              <option value="Marksman">Marksman</option>
+            </select>
+            <button type="button" class="filterButton">Filter</button>
+
+            <!-- Abro menu de selecciones de ordenar xxxxxxxxxxxxxxxxxxx-->
+            
+              <select id = "sortBy">
+                <option value="Attack">Attack</option>
+                <option value="Defense">Defense</option>
+                <option value="Magic">Magic</option>
+                <option value="Difficulty">Difficulty</option>   
+              </select>
+    
+              <select id = "sortOrder"> 
+                <option value="Ascendente">Ascending</option>
+                <option value="Descendente">Descending</option>
+              </select>
+    
+            <!-- Abro menu de selecciones de ordenar xxxxxxxxxxxxxxxxxxx-->
+    
+              <button type="button" class="sortButton">Sort</button>
+            </div>
+        
+        <div class = "descriptionDesk"> 
+
+          <div class = "champDContainer">
+            <div id="champD">
+            </div>
+          </div>  
+
+          <div class = "containerDesk">
+            <button id ="next">Back</button>
+
+            <div id="champions"></div>
+            
+            <button id ="back">Next</button>
+          </div>
+
+        </div>
+
+        <div id="here"></div>
+
+      </div>
+      <!-- Cierro viewTwo xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+    </main>
+
+    <!-- <div id="root"></div> -->
+
+    <footer class = "footerContainer">
+      
+      <a href = "https://signup.euw.leagueoflegends.com/es/signup/redownload?page_referrer=index"><button type = "button" class = "download" >Download</button></a>
+      <p>All Rigths Reserved ©</p>
+      <div class="social">
+        <a href="https://www.facebook.com/leagueoflegends/"><img src="facebook.png"></a>
+        <a href="https://www.instagram.com/leagueoflegends/"><img src="instagram.png"></a>
+        <a href="https://www.youtube.com/channel/UC2t5bjwHdUX4vM2g8TRDq5g"><img src="youtube.png"></a>
+      </div>
+  </footer>
     <script src="main.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </body>
 </html>
