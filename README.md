@@ -1,51 +1,33 @@
 # League Of Legends ⚔
 
-## UX
+## UX Experiencia de usuario 🥼
 
-
+La aplicación es creada para jugadores con experiencia en League of Legends, es decir, con conocimientos previos.
 
 * [X] Diseñar la aplicación pensando y entendiendo al usuario.
 * [X] Crear prototipos para obtener feedback e iterar.
 * [X] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
 * [X] Planear y ejecutar tests de usabilidad.
 
+## UI Diseño de la Interfaz de Usuario 🎨
 
-En este proyecto **construirás una _página web_ para visualizar un
-_conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario
-necesita.
+#### Prototipo de baja fidelidad
 
-Como entregable final tendrás una página web que permita **visualizar la data,
-filtrarla, ordenarla y hacer algún cálculo agregado**. Con cálculo agregado
-nos referimos a distintos cálculos que puedes hacer con la data para mostrar
-información aún más relevante para los usuarios (promedio, el valor máximo
-o mínimo, etc).
 
-Esta vez te proponemos una serie de datos de diferentes _temáticas_ para que
-explores y decidas con qué temática te interesa trabajar. Hemos elegido
-específicamente estos sets de datos porque creemos que se adecúan bien a esta
-etapa de tu aprendizaje.
 
-Una vez que definas tu área de interés, buscar entender quién es tu usuario
-y qué necesita saber o ver exactamente; luego podrás construir la interfaz que
-le ayude a interactuar y entender mejor esos datos.
+#### Prototipo de alta fidelidad
 
-Estos son datos que te proponemos:
+Lo siguiente es diseñar tu Interfaz de Usuario (UI por sus siglas en inglés -
+_User Interface_). Para eso debes aprender a utilizar alguna herramienta de
+diseño visual. Nosotros te recomendamos [Figma](https://www.figma.com/) que es
+una herramienta que funciona en el navegador y, además, puedes crear una cuenta
+gratis. Sin embargo, eres libre de utilizar otros editores gráficos como
+Illustrator, Photoshop, PowerPoint, Keynote, etc.
 
-* [Pokémon](src/data/pokemon/pokemon.json):
-  En este set encontrarás una lista con los 251 Pokémon de la región de Kanto
-  y Johto, junto con sus respectivas estadísticas usadas en el juego
-  [Pokémon GO](http://pokemongolive.com).
-  - [Investigación con jugadores de Pokémon Go](src/data/pokemon/README.md)
+El diseño debe representar el _ideal_ de tu solución. Digamos que es lo que
+desearías implementar si tuvieras tiempo ilimitado para trabajar. Además, tu
+diseño debe seguir los fundamentos de _visual design_.
 
-* [League of Legends - Challenger leaderboard](src/data/lol/lol.json):
-  Este set de datos muestra la lista de campeones en una liga del
-  juego League of Legends (LoL).
-  - [Investigación con jugadores de LoL](src/data/lol/README.md)
-
-* [Rick and Morty](src/data/rickandmorty/rickandmorty.json).
-  Este set nos proporciona la lista de los personajes de la serie Rick and
-  Morty. [API Rick and Morty](https://rickandmortyapi.com).
-  - [Investigación con seguidores de Rick and Morty](src/data/rickandmorty/README.md)
 
 ## 3. Objetivos de aprendizaje
 
@@ -94,13 +76,6 @@ usuario necesita.
 * [ ] Uso de comandos de git (add | commit | pull | status | push)
 * [ ] Manejo de repositorios de GitHub (clone | fork | gh-pages)
 * [ ] Colaboración en Github (branches | pull requests | |tags)
-
-### UX
-
-* [ ] Diseñar la aplicación pensando y entendiendo al usuario.
-* [ ] Crear prototipos para obtener feedback e iterar.
-* [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
-* [ ] Planear y ejecutar tests de usabilidad.
 
 ## 4. Consideraciones generales
 
