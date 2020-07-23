@@ -1,0 +1,586 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+}
+
+html, body{
+    font-family: 'Cabin', sans-serif;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-image: url("fondo.jpg");
+    background-position: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navegation{
+    background: #f1f1e6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 5vh;
+    width: 100%;
+    align-items: center;    
+    position: fixed; 
+    top: 0;
+    z-index: 1;
+}
+
+.navegation  ul{
+    float: left;
+    margin-left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba( 3, 8, 46);
+    top: 5%;
+    left: 0;
+    color: #f1f1e6;
+    transition: all .5s;
+    transform: translateX(-100%);
+}
+
+.navegation ul li{
+    display: block;
+    margin: 18% 0;
+    font-size: 20px;   
+}
+
+.navegation ul li a{
+   color: #f1f1e6;
+}
+
+.navegation ul li:hover{
+    background: #00C6C7;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #A99797;
+    float: left;
+    line-height: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    display: block;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ ul{
+    transform: translateX(0%);
+}
+
+.search{
+    margin-top: 2px;
+    float: right;
+    margin-right: 5px;
+    width: 25%;
+}
+
+.titleContainer{
+    display: flex;
+    width: 100%;
+    height: 89.3vh;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.itemTitle1{
+    color: white;
+    align-self: center;
+    font-size: 24px;
+    margin-left: -140px;
+}
+
+.itemTitle2{
+    color: white;
+    align-self: center;
+    font-size: 36px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+.explore{
+    background-color:#00c6c7;
+    flex-direction: column;
+    align-self: center;
+    padding: 10px;
+    width:100px;
+    border-style: none;
+}
+
+.explore:hover{
+    background-color: darkslateblue;
+    color: white;
+}
+
+.footerContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+    background-color:#f1f1e6;
+    margin-bottom: 0;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+}
+
+.download{
+    background-color:#00c6c7;
+    border-style: none;
+    padding: 9px;
+    cursor: pointer;
+}
+
+.download:hover{
+    background-color: darkslateblue;
+    color: white;
+
+}
+
+.footerContainer p{
+    font-size: 14px;
+
+}
+
+.social{
+    width: 100px;   
+}
+
+.footerContainer img{
+    opacity: 0.8;
+    width: 30px;
+
+}
+
+.uniqueChamp{
+    display: flex;
+    background-color: #00c6c2;
+    width: 25%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+
+}
+
+.imageChampion{
+    width: 100%;
+}
+
+.champName{
+    font-size: 16px;
+}
+
+#here, #here2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.sortContainer{
+    display: flex;
+    width: 100%;
+    margin-top: -12%;
+    justify-content: center;
+    height: 35px;
+    cursor: pointer;
+    position: fixed;
+}
+
+.statics{
+    background-color: #020024;
+    color: #f0f0d1;
+}
+
+.filterButton{
+    width: 12%;
+    background-color: #00C6C7;
+    cursor: pointer;
+    border-style: none;
+}
+
+.sortButton{
+    width: 12%;
+    background-color: #00C6C7;
+    cursor: pointer;
+    border-style: none;
+}
+
+.champDescription{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color:#f0f0d1;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 1);
+    margin-top: 20%;
+}
+
+.descriptionText{
+    background-color: #020024;
+    padding: 3%;
+}
+
+.imgSplash{
+    border: 5px;
+    width: 100%;
+}
+
+.descriptionDesk{
+    display: none;
+}
+
+.containerDesk{
+    display: none;
+}
+
+@media only screen and (min-width: 640px) {
+
+.checkbtn{
+    font-size: 30px;
+    line-height: 30px;
+    margin-left: 30px;
+}
+
+.search{
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+.titleContainer{
+    font-size: 24px;
+    margin-left: -140px;
+}
+
+.itemTitle2{
+    font-size: 36px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+.footerContainer{
+    height: 5vh;
+    padding: 3px;
+    z-index: 2;
+}
+
+.download{
+    padding: 9px;
+}
+
+.footerContainer p{
+    font-size: 14px;
+}
+
+.uniqueChamp{
+    margin: 10px;
+    width: 27%;
+}
+
+.champName{
+    font-size: 16px;
+}
+
+#here{
+    margin: 100px 0; 
+}
+
+.containerDesk{
+    display: none;
+}
+}
+
+@media only screen and (min-width: 768px) {
+
+.checkbtn{
+    font-size: 30px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.search{
+    margin-top: 2px;
+    margin-right: 15px;
+    padding: 10px;
+}
+
+.titleContainer{
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.itemTitle1{
+    font-size: 43px;
+    margin-left: -230px;
+}
+
+.itemTitle2{
+    font-size: 60px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+.explore{
+    padding: 13px;
+    font-size: 20px;
+}
+
+.download{
+    padding: 13px;
+    font-size: 20px;
+}
+
+.footerContainer p{
+    font-size: 20px;
+}
+
+.champName{
+    font-size: 24px;
+}
+
+.navegation ul li{
+    display: block;
+    margin: 12% 0;
+    font-size: 30px;   
+}
+
+.uniqueChamp{
+    width: 15%;
+}
+
+#here{
+    margin: 180px 0;
+}
+
+.containerDesk, #champions, .championsView, #descriptionDesk{
+        display: none;
+}
+}
+
+@media only screen and (min-width: 992px) {
+
+html, body{
+    width: 100%;
+    height: auto;
+}
+
+.checkbtn{
+    display: none;
+}
+
+.navegation{
+    height: 0;
+}
+
+.navegation  ul{
+    margin: 2% 5%;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    width: 90%;
+    height: 40px;
+    background-color: #f1f1e6;
+    transition: none;
+    transform: none;
+    align-items: center;  
+    cursor: pointer;
+    color:black;
+    justify-content: center;
+}
+
+.navegation ul li{
+    justify-content: space-between;
+    align-items: center;
+    display: inline;
+    font-size: 20px; 
+    padding: 2px 5%;  
+}
+
+.navegation ul li a{
+    color: black;
+}
+
+.navegation ul li:hover{
+    background-color: #00C6C7;
+    padding: 20px 5%;
+}
+
+.search {
+    display: none;
+}
+
+#here2{
+    display: none;
+}
+
+.titleContainer{
+    justify-content: center;
+}
+
+.itemTitle1{
+    font-size: 53px;
+    margin-left: -300px;
+}
+
+.itemTitle2{
+    font-size: 80px;
+    margin-top: -35px;
+    margin-bottom: 10px;
+}
+
+.explore{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.download{
+    font-size: 18px;
+}
+        
+.footerContainer p{
+    font-size: 14px;    
+}
+        
+.uniqueChamp{
+    display: flex;
+    background-color: #00c6c2;
+    width: 8%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;    
+}
+    
+.imageChampion{
+    width: 100%;
+}
+    
+.champName{
+    font-size: 15px;
+}
+
+#here{
+    display: none;
+}
+
+.containerDesk{
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0 13%;
+}
+
+#champions{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#back, #next{
+    float: right;
+    width: 70px;
+    height: 30px;
+    margin-top: 160px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #f1f1e6;
+    border-color: #00C6C7;
+    color: rgba( 3, 8, 46); 
+    cursor: pointer;
+}
+
+#champD{
+    font-size: 16px;
+}
+
+.champDContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+.imageChampionDesk{
+    display: flex;
+    width: 300px;
+    object-fit: cover;
+    padding-left: 50px;
+    object-position: 90% 0; 
+}
+
+.descriptionDesk{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 200px;
+    margin-bottom: 1px;
+    flex-direction: column;
+}
+
+.champDescriptionDesk{
+    width: 100%;
+    max-height: 400px;
+    display: flex;
+    flex-direction: row;
+    color: #f1f1e6;
+    margin-bottom: 1px;
+}
+
+.textDescriptionContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: #020024;
+    text-align: left;
+    font-size: 16px;
+    align-items: flex-start;
+    height: 200px;
+    padding: 4% 2%; 
+}
+
+.champTitlesDesk{
+    display: flex;
+    background-color: transparent;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    align-items: left;
+}
+
+.champTitlesDesk, h1{
+    display: flex;
+    font-size: 48px;
+    margin-left: 1%;
+    align-items: flex-start;
+}
+
+.titleAndDescription{
+    display: flex;
+    flex-direction: row;
+    height:100px;
+}
+
+.sortContainer{
+    margin-top: -5%;
+    margin-left: 23.5%;
+}
+}
