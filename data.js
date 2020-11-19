@@ -123,8 +123,7 @@ export const filterData = (data, condition) => {
     }
     
   }
-   newData.filter(Boolean);
-   console.log(lolDataHTML);
+  newData.filter(Boolean);
   return lolDataHTML;
 }
 
